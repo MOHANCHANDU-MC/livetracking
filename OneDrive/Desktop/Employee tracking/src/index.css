@@ -1,0 +1,81 @@
+/* src/index.css */
+/* Premium design tokens */
+:root {
+  --primary-h: 220;
+  --primary-s: 80%;
+  --primary-l: 60%;
+  --bg-h: 210;
+  --bg-s: 30%;
+  --bg-l: 12%;
+  --text-h: 0;
+  --text-s: 0%;
+  --text-l: 95%;
+  --radius: 0.75rem;
+  --shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-l: 8%;
+    --text-l: 90%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: hsl(var(--bg-h), var(--bg-s), var(--bg-l));
+  color: hsl(var(--text-h), var(--text-s), var(--text-l));
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+button {
+  background: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 5%));
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: inherit;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  height: 300px;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+p { margin: 0.5rem 0; }
+
+address { font-style: normal; }

@@ -161,13 +161,13 @@ export default function LoginPage() {
       <Box
         sx={{
           position: "absolute",
-          top: "-34%",
-          left: "-18%",
+          top: "-28%",
+          left: "-16%",
           width: { xs: "105vw", md: "650px" },
           height: { xs: "105vw", md: "650px" },
           borderRadius: "50%",
-          background: "radial-gradient(circle at 62% 48%, rgba(22, 126, 255, 0.78) 0%, rgba(8, 67, 162, 0.72) 42%, rgba(2, 26, 78, 0.85) 70%, transparent 71%)",
-          boxShadow: " inset -34px -22px 80px rgba(0, 4, 28, 0.78), 0 0 80px rgba(0, 105, 255, 0.25)",
+          background: "radial-gradient(circle at 62% 48%, rgba(22, 135, 255, 0.92) 0%, rgba(8, 75, 180, 0.84) 44%, rgba(2, 34, 98, 0.9) 70%, transparent 71%)",
+          boxShadow: "inset -34px -22px 80px rgba(0, 4, 28, 0.68), 0 0 100px rgba(0, 105, 255, 0.38)",
           pointerEvents: "none",
           zIndex: 0,
         }}
@@ -364,6 +364,7 @@ export default function LoginPage() {
                   height: { xs: 45, md: 53 },
                   mx: { xs: 0.5, md: 0.7 },
                   flexShrink: 0,
+                  borderRadius: "50%",
                   background: "conic-gradient(from -2deg, #83E4FF 0 23%, transparent 23% 27%, #12B6FF 27% 48%, transparent 48% 52%, #176BFF 52% 73%, transparent 73% 77%, #43C9FF 77% 98%, transparent 98%)",
                   mask: "radial-gradient(circle, transparent 0 43%, #000 44% 100%)",
                   WebkitMask: "radial-gradient(circle, transparent 0 43%, #000 44% 100%)",
@@ -531,12 +532,12 @@ export default function LoginPage() {
             sx={{
               width: "100%",
               maxWidth: 480,
-              background: "linear-gradient(145deg, rgba(10, 35, 75, 0.6), rgba(5, 20, 45, 0.8))",
+              background: "linear-gradient(145deg, rgba(12, 54, 110, 0.74), rgba(4, 30, 70, 0.88))",
               backdropFilter: "blur(20px)",
-              border: "1px solid rgba(0, 162, 255, 0.4)",
+              border: "1px solid rgba(39, 190, 255, 0.72)",
               borderRadius: "16px",
               padding: { xs: 4, md: 5 },
-              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 162, 255, 0.15)",
+              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.6), 0 0 34px rgba(0, 174, 255, 0.28)",
             }}
           >
             <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>Welcome back</Typography>

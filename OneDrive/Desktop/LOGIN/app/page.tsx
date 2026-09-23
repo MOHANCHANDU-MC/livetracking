@@ -152,22 +152,36 @@ export default function LoginPage() {
         minHeight: "100dvh",
         position: "relative",
         overflow: "hidden",
-        backgroundColor: "#010e28",
+        background: "linear-gradient(180deg, #061a3e 0%, #031538 56%, #01091d 100%)",
         color: "#FFF",
         fontFamily: '"Inter", sans-serif',
       }}
     >
-      {/* Deep atmospheric glow and large planet-like glow */}
+      {/* Large glowing planet */}
       <Box
         sx={{
           position: "absolute",
-          top: "-20%",
-          left: "-10%",
-          width: "80vw",
-          height: "80vw",
-          background: "radial-gradient(circle, rgba(14, 76, 168, 0.25) 0%, transparent 60%)",
+          top: "-34%",
+          left: "-18%",
+          width: { xs: "105vw", md: "650px" },
+          height: { xs: "105vw", md: "650px" },
+          borderRadius: "50%",
+          background: "radial-gradient(circle at 62% 48%, rgba(22, 126, 255, 0.78) 0%, rgba(8, 67, 162, 0.72) 42%, rgba(2, 26, 78, 0.85) 70%, transparent 71%)",
+          boxShadow: " inset -34px -22px 80px rgba(0, 4, 28, 0.78), 0 0 80px rgba(0, 105, 255, 0.25)",
           pointerEvents: "none",
           zIndex: 0,
+        }}
+      />
+
+      {/* Stars and atmospheric pinpoints */}
+      <Box
+        sx={{
+          position: "absolute",
+          inset: 0,
+          pointerEvents: "none",
+          zIndex: 0,
+          backgroundImage: "radial-gradient(circle at 35% 14%, #5bd8ff 0 2px, transparent 3px), radial-gradient(circle at 62% 10%, #2cbcff 0 1px, transparent 3px), radial-gradient(circle at 80% 32%, #4ccfff 0 2px, transparent 4px), radial-gradient(circle at 93% 62%, #39c8ff 0 2px, transparent 4px), radial-gradient(circle at 45% 66%, #2bbaff 0 2px, transparent 4px), radial-gradient(circle at 13% 79%, #66ddff 0 1px, transparent 3px), radial-gradient(circle at 4% 64%, #27b9ff 0 2px, transparent 4px), radial-gradient(circle at 67% 45%, #20a9ff 0 1px, transparent 3px), radial-gradient(circle at 56% 28%, #2bbcff 0 1px, transparent 3px), radial-gradient(circle at 90% 9%, #2ab7ff 0 1px, transparent 3px)",
+          filter: "drop-shadow(0 0 8px rgba(0, 184, 255, 0.8))",
         }}
       />
 
@@ -207,20 +221,20 @@ export default function LoginPage() {
           bottom: 0,
           left: 0,
           right: 0,
-          height: "150px",
-          background: "linear-gradient(to top, #020c21, transparent)",
+          height: "190px",
+          background: "linear-gradient(to top, rgba(1, 10, 30, 0.96), transparent)",
           zIndex: 1,
           display: "flex",
           alignItems: "flex-end",
           justifyContent: "center",
-          opacity: 0.6,
+          opacity: 0.85,
           "&::before": {
             content: '""',
             position: "absolute",
             bottom: 0,
             width: "100%",
-            height: "120px",
-            background: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath fill='%23061633' d='M0,100 L0,70 L20,70 L20,90 L40,90 L40,60 L60,60 L60,80 L90,80 L90,50 L110,50 L110,70 L130,70 L130,40 L160,40 L160,80 L180,80 L180,30 L210,30 L210,90 L240,90 L240,60 L270,60 L270,80 L300,80 L300,40 L330,40 L330,70 L350,70 L350,20 L380,20 L380,90 L410,90 L410,50 L440,50 L440,80 L470,80 L470,30 L500,30 L500,70 L530,70 L530,40 L560,40 L560,80 L590,80 L590,50 L620,50 L620,90 L650,90 L650,30 L680,30 L680,80 L710,80 L710,60 L740,60 L740,90 L770,90 L770,40 L800,40 L800,70 L830,70 L830,50 L860,50 L860,80 L890,80 L890,30 L920,30 L920,90 L950,90 L950,60 L980,60 L980,100 Z'/%3E%3C/svg%3E\")",
+            height: "145px",
+            background: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath fill='%2305183d' d='M0,100 L0,70 L20,70 L20,90 L40,90 L40,60 L60,60 L60,80 L90,80 L90,50 L110,50 L110,70 L130,70 L130,40 L160,40 L160,80 L180,80 L180,30 L210,30 L210,90 L240,90 L240,60 L270,60 L270,80 L300,80 L300,40 L330,40 L330,70 L350,70 L350,20 L380,20 L380,90 L410,90 L410,50 L440,50 L440,80 L470,80 L470,30 L500,30 L500,70 L530,70 L530,40 L560,40 L560,80 L590,80 L590,50 L620,50 L620,90 L650,90 L650,30 L680,30 L680,80 L710,80 L710,60 L740,60 L740,90 L770,90 L770,40 L800,40 L800,70 L830,70 L830,50 L860,50 L860,80 L890,80 L890,30 L920,30 L920,90 L950,90 L950,60 L980,60 L980,100 Z'/%3E%3C/svg%3E\")",
             backgroundSize: "50% 100%",
             backgroundRepeat: "repeat-x",
           }

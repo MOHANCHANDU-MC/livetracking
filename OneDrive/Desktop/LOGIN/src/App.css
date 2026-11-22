@@ -1,0 +1,27 @@
+/* Responsive Layout Media Queries for AVYOMA Login Page */
+@media (max-width: 900px) {
+  header {
+    padding: 16px 24px !important;
+  }
+
+  main {
+    padding: 16px 24px 40px 24px !important;
+  }
+
+  h1 {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: flex-start !important;
+  }
+
+  .glass-card {
+    padding: 28px 22px !important;
+    border-radius: 18px !important;
+  }
+}

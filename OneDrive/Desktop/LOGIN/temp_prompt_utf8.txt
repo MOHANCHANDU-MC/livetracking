@@ -1,0 +1,239 @@
+﻿<USER_REQUEST>
+# FINAL MASTER PROMPT ù BUILD LOGIN PAGE ACCORDING TO ATTACHED CODE
+
+I am attaching my existing Login Page source code with this prompt.
+
+IMPORTANT:
+DO NOT ASK ME TO PASTE THE CODE INTO THE PROMPT.
+
+READ THE ATTACHED CODE FILE AND USE IT AS THE SOURCE OF TRUTH.
+
+============================================================
+1. PROJECT TYPE
+============================================================
+
+I am creating a COMPLETELY NEW, STANDALONE LOGIN PAGE PROJECT.
+
+This is NOT an integration task.
+
+DO NOT add this Login Page to my existing AVYOMA project.
+
+DO NOT modify my existing AVYOMA project.
+
+DO NOT modify the existing AVYOMA dashboard.
+
+DO NOT modify the existing AVYOMA CRM/ERP/Finance application.
+
+DO NOT modify existing AVYOMA routes.
+
+DO NOT modify existing AVYOMA components.
+
+DO NOT modify existing AVYOMA functionality.
+
+Work ONLY inside the NEW STANDALONE LOGIN PAGE PROJECT that is currently open in Antigravity.
+
+============================================================
+2. ATTACHED CODE IS THE SOURCE OF TRUTH
+============================================================
+
+I have attached my Login Page code.
+
+FIRST:
+Read and understand the attached code completely.
+
+THEN:
+Make the current standalone project work according to that code.
+
+Do NOT create a different Login Page.
+
+Do NOT invent your own implementation.
+
+Do NOT redesign the functionality.
+
+Do NOT replace the code with a generic login template.
+
+The attached code determines:
+
+- Login structure
+- Form fields
+- Text
+- Names
+- Branding
+- Icons
+- Colors
+- Gradients
+- Validation
+- Login behavior
+- Loading state
+- Error handling
+- API request
+- Routing
+- Session handling
+- Responsive behavior
+- Visual styling
+
+Use the attached code as the implementation reference.
+
+============================================================
+3. CURRENT PROJECT
+============================================================
+
+The current project is a NEW STANDALONE Next.js project.
+
+When I run:
+
+npm run dev
+
+and open:
+
+http://localhost:3000
+
+I want the Logi
+<truncated 37417 bytes>
+                   textTransform: "none",
+
+                    color: "#48BCFF",
+
+                    fontSize: 13,
+
+                    fontWeight: 700,
+
+                    "&:hover": {
+
+                      backgroundColor: "transparent",
+
+                      color: "#89D8FF",
+
+                    },
+
+                  }}
+
+                >
+
+                  Create organization
+
+                </Button>
+
+              </Box>
+
+            </Box>
+
+
+
+            <Box
+
+              sx={{
+
+                mt: 4.2,
+
+                pt: 2.4,
+
+                borderTop: "1px solid rgba(255,255,255,.08)",
+
+                display: "flex",
+
+                justifyContent: "center",
+
+                alignItems: "center",
+
+                gap: 1.3,
+
+              }}
+
+            >
+
+              <Typography sx={{ color: "rgba(255,255,255,.27)", fontSize: 10.5 }}>
+
+                ⌐ {new Date().getFullYear()} BOSS
+
+              </Typography>
+
+
+
+              <Box
+
+                sx={{
+
+                  width: 3,
+
+                  height: 3,
+
+                  borderRadius: "50%",
+
+                  backgroundColor: "rgba(255,255,255,.18)",
+
+                }}
+
+              />
+
+
+
+              <Typography sx={{ color: "rgba(255,255,255,.27)", fontSize: 10.5 }}>
+
+                Secure workspace
+
+              </Typography>
+
+            </Box>
+
+          </Box>
+
+        </Box>
+
+      </Box>
+
+
+
+      {/* Mobile logo */}
+
+      <Box
+
+        sx={{
+
+          display: { xs: "block", md: "none" },
+
+          position: "absolute",
+
+          top: 20,
+
+          left: 24,
+
+          zIndex: 20,
+
+        }}
+
+      >
+
+        <Box
+
+          component="img"
+
+          src="/boss-logo.png"
+
+          alt="BOSS"
+
+          sx={{
+
+            width: 145,
+
+            height: "auto",
+
+            filter: "drop-shadow(0 8px 20px rgba(0,122,255,.14))",
+
+          }}
+
+        />
+
+      </Box>
+
+    </Box>
+
+  );
+
+}
+
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-21T13:20:52+05:30.
+</ADDITIONAL_METADATA>
